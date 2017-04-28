@@ -4,26 +4,31 @@
 git --version
 if [ "$?" != "0" ]; then
 	echo "Need Install Git"
+	exit 1
 fi
 
 tmux -V
 if [ "$?" != "0" ]; then
 	echo "Need Install Tmux"
+	exit 1
 fi
 
 ctags --version
 if [ "$?" != "0" ]; then
 	echo "Need Install Ctags"
+	exit 1
 fi
 
 zsh --version
 if [ "$?" != "0" ]; then
 	echo "Need Install Zsh"
+	exit 1
 fi
 
 vim --version | grep "VIM - Vi IMproved"
 if [ "$?" != "0" ]; then
 	echo "Need Install Vim"
+	exit 1
 fi
 
 # 2. Install vimrc
