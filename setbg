@@ -1,5 +1,5 @@
 #!/bin/bash
 
 git --git-dir ~/.vim_runtime/.git --work-tree ~/.vim_runtime/ checkout $1
-ln -sf ~/.dotfiles/.tmuxcolors-$1.conf ~/.tmuxcolors.conf
-ln -sf ~/.dotfiles/dircolors.ansi-$1 ~/.dircolors
+ln -sf ~/dotfiles/.tmuxcolors-$1.conf ~/.tmuxcolors.conf
+ln -sf ~/dotfiles/dircolors.ansi-$1 ~/.dircolors

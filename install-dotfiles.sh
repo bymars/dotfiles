@@ -39,8 +39,8 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 # 4. Install other dotfiles
-ln -svf ~/.dotfiles/.tmux.conf ~/.tmux.conf
-ln -svf ~/.dotfiles/.zshrc ~/.zshrc
+ln -svf ~/.dotfiles/tmux.conf ~/.tmux.conf
+ln -svf ~/.dotfiles/zshrc ~/.zshrc
 ./setbg dark
 
 # 5. Install setbg
