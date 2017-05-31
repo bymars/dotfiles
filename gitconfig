@@ -1,0 +1,14 @@
+[user]
+	name = Linhong Liu
+	email = linhong.liu@intel.com
+[core]
+	editor = /usr/bin/vim
+[alias]
+	logl = log --pretty=oneline
+	lg = log --graph --pretty=tformat:'%C(yellow)%h%Creset %C(bold green)%an, %ar%Creset - %s %C(cyan)%d%Creset'
+	lgb = log --graph --pretty=tformat:'%C(yellow)%h%Creset %C(bold green)%an, %ar%Creset - %s %C(cyan)%d%Creset' --branches
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto

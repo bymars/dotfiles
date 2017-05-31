@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "sudo password is needed"
+echo "Please intall below packages:"
+echo "\tgit tmux ctags zsh vim"
 # 1. Check Prerequisite
 git --version
 if [ "$?" != "0" ]; then
@@ -41,6 +44,7 @@ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install
 # 4. Install other dotfiles
 ln -svf ~/.dotfiles/tmux.conf ~/.tmux.conf
 ln -svf ~/.dotfiles/zshrc ~/.zshrc
+ln -svf ~/.dotfiles/gitconfig ~/.gitconfig
 ./setbg dark
 
 # 5. Install setbg
