@@ -45,7 +45,7 @@ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install
 ln -svf ~/.dotfiles/tmux.conf ~/.tmux.conf
 ln -svf ~/.dotfiles/zshrc ~/.zshrc
 ln -svf ~/.dotfiles/gitconfig ~/.gitconfig
-./setbg dark
+~/.dotfiles/setbg dark
 
 # 5. Install setbg
 mkdir -pv ~/bin
