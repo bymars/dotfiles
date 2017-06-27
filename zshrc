@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/centos/.oh-my-zsh
+  export ZSH=/home/linhongl/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -97,12 +97,13 @@ export FTP_PROXY=$ftp_proxy
 export SOCKS_PROXY=$socks_proxy
 export NO_PROXY=$no_proxy
 
-JAVA_HOME="$HOME/tools/jdk1.8.0_111"
-HADOOP_HOME="$HOME/tools/hadoop-2.6.5"
-HADOOP_CONF_DIR="$HADOOP_HOME/etc/hadoop"
+JAVA_HOME="/usr/java/jdk1.8.0_111"
+HADOOP_HOME="/usr/local/hadoop-2.8.0"
+HADOOP_CONF_DIR="$HOME/.hadoop"
+HADOOP_LOG_DIR="$HOME/logs/hadoop"
 PATH="$JAVA_HOME/bin:$HADOOP_HOME/sbin:$HADOOP_HOME/bin:$PATH"
 #LD_LIBRARY_PATH="$HADOOP_HOME/lib/native:$LD_LIBRARY_PATH"
-export PATH JAVA_HOME HADOOP_HOME HADOOP_CONF_DIR
+export PATH JAVA_HOME HADOOP_HOME HADOOP_CONF_DIR HADOOP_LOG_DIR
 
 if [ "$TERM" = "xterm" ]; then                                                  
     export TERM="xterm-256color"
