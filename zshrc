@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/linhongl/.oh-my-zsh
+  export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -83,29 +83,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export GIT_PROXY_COMMAND=/usr/bin/git-proxy
-export proxyaddr=10.239.4.160
-export proxyport=913
-export http_proxy="http://$proxyaddr:$proxyport"
-export https_proxy="https://$proxyaddr:$proxyport"
-export ftp_proxy="ftp://$proxyaddr:$proxyport"
-export socks_proxy="socks://$proxyaddr:$proxyport"
-export no_proxy="localhost,10.0.4.20,10.0.4.19,20.0.4.20,20.0.4.19,20.0.4.1,20.0.4.117,20.0.4.119,20.0.4.120,20.0.4.2,20.0.0.1,*intel.com:911,172.16.0.0/16,10.0.0.0/8,127.0.0.0/8"
-export HTTP_PROXY=$http_proxy
-export HTTPS_PROXY=$https_proxy
-export FTP_PROXY=$ftp_proxy
-export SOCKS_PROXY=$socks_proxy
-export NO_PROXY=$no_proxy
 
-JAVA_HOME="/usr/java/jdk1.8.0_111"
-HADOOP_HOME="/usr/local/hadoop-2.8.0"
-HADOOP_CONF_DIR="$HOME/.hadoop"
-HADOOP_LOG_DIR="$HOME/logs/hadoop"
-PATH="$JAVA_HOME/bin:$HADOOP_HOME/sbin:$HADOOP_HOME/bin:$PATH"
-#LD_LIBRARY_PATH="$HADOOP_HOME/lib/native:$LD_LIBRARY_PATH"
-export PATH JAVA_HOME HADOOP_HOME HADOOP_CONF_DIR HADOOP_LOG_DIR
-
-if [ "$TERM" = "xterm" ]; then                                                  
+if [ "$TERM" = "xterm" ]; then
     export TERM="xterm-256color"
 fi
 
